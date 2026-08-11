@@ -558,7 +558,41 @@ img {
   gap: 1.5rem;
 }
 
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
 /* --- Components & Cards --- */
+/* Mission & Vision Card Layout styles */
+.mission-vision-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.mission-vision-img {
+  width: 200px;
+  height: 180px;
+  flex-shrink: 0;
+}
+
+/* Stats Bar Grid Layout styles */
+.stats-bar-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 
 /* Home Hero Custom styling */
 .hero-slider {
@@ -2269,6 +2303,12 @@ img {
 }
 
 @media (max-width: 992px) {
+  .grid-5 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .stats-bar-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
   .grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2302,6 +2342,20 @@ img {
 }
 
 @media (max-width: 768px) {
+  .grid-5 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .mission-vision-card {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .mission-vision-img {
+    width: 100% !important;
+    height: 180px !important;
+  }
+  .section-title {
+    font-size: 2rem !important;
+  }
   html {
     font-size: 15px;
   }
@@ -2381,6 +2435,17 @@ img {
 }
 
 @media (max-width: 576px) {
+  .grid-2, .grid-3, .grid-4, .grid-5 {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .stats-bar-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .section-title {
+    font-size: 1.75rem !important;
+  }
   .hero-slider-content h1 {
     font-size: 2.25rem;
   }
@@ -2430,6 +2495,25 @@ img {
   }
   .db-header-search {
     width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 1rem 0.75rem !important;
+  }
+  .logo {
+    font-size: 1.25rem !important;
+  }
+  .logo svg {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+  .page-hero h1 {
+    font-size: 2rem !important;
   }
 }
 
@@ -2495,5 +2579,46 @@ img {
   .login-nav-mobile:hover {
     background-color: var(--primary) !important;
     transform: translateY(-2px);
+  }
+}
+
+/* Extra Responsive overrides for products and newsletter page elements */
+@media (max-width: 480px) {
+  .catalog-content-header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1rem !important;
+  }
+  .catalog-sort-select {
+    width: 100% !important;
+  }
+  .newsletter-banner {
+    padding: 1.5rem 1rem !important;
+  }
+  .newsletter-form {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+  .newsletter-form input, .newsletter-form button {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-footer {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+  }
+  .product-price {
+    text-align: center !important;
+  }
+  .btn-add-cart {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .filter-sidebar {
+    padding: 1.5rem 1rem !important;
   }
 }

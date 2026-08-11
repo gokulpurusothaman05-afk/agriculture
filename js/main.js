@@ -446,19 +446,25 @@ function initLoginForm() {
     const emailInput = document.getElementById('l-email');
     if (!emailInput) return;
     
-    const email = emailInput.value.trim().toLowerCase();
-    const username = email.split('@')[0];
+    const email = emailInput.value.trim();
+    // Get username from email if "@" exists, otherwise use input string
+    let username = email.split('@')[0];
+    if (!username) {
+      username = email;
+    }
+    
     localStorage.setItem('username', username);
     localStorage.setItem('userEmail', email);
     
-    if (email.endsWith('@admin.com')) {
-      alert('Signed In successfully!');
+    // Get selected role
+    const selectedRoleEl = loginForm.querySelector('input[name="login-role"]:checked');
+    const role = selectedRoleEl ? selectedRoleEl.value : 'client';
+    
+    alert('Signed In successfully!');
+    if (role === 'admin') {
       window.location.href = 'admin-dashboard.html';
-    } else if (email.endsWith('@client.com') || email.endsWith('@gmail.com')) {
-      alert('Signed In successfully!');
-      window.location.href = 'client-dashboard.html';
     } else {
-      alert('Invalid email format. Please use a @client.com, @gmail.com, or @admin.com address to log in.');
+      window.location.href = 'client-dashboard.html';
     }
   });
 }
