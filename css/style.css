@@ -2466,3 +2466,34 @@ img {
   filter: brightness(1.2);
   transform: translateY(-3px);
 }
+
+/* Mobile Menu Only Login Button */
+.mobile-only-login {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .mobile-only-login {
+    display: block !important;
+    margin-top: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+  .login-nav-mobile {
+    background-color: var(--accent) !important;
+    color: var(--bg-white) !important;
+    padding: 0.85rem 2rem !important;
+    border-radius: var(--radius-sm) !important;
+    display: inline-block !important;
+    font-weight: 700 !important;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .login-nav-mobile:hover {
+    background-color: var(--primary) !important;
+    transform: translateY(-2px);
+  }
+}
