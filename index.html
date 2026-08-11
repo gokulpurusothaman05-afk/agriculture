@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Empowering farmers with innovative solutions and quality products for sustainable agriculture. Over 10 years of experience.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 5L15 25L50 45L85 25L50 5Z" fill="#0b6635" />
+          <path d="M15 40L50 60L85 40" stroke="#064e28" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <path d="M15 55L50 75L85 55" stroke="#0b6635" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <path d="M15 70L50 90L85 70" stroke="#064e28" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+        <span>
+          Stackly
+          <small>FARMS</small>
+        </span>
+      </a>
+      
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="crops.html" class="nav-link">Crops</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <a href="login.html" class="nav-cta">Log In</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-slider">
+    <div class="hero-slider-content reveal-left active">
+      <h1>Nurturing Farms,<br>Growing Futures</h1>
+      <p>Empowering farmers with innovative solutions, quality inputs, and expert support for a better tomorrow.</p>
+      <div class="hero-buttons">
+        <a href="services.html" class="btn-primary">
+          Explore Services
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="contact.html" class="btn-outline">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight Bar -->
+  <div class="highlight-bar reveal">
+    <div class="highlight-container">
+      <div class="highlight-item">
+        <div class="highlight-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <span>100% Organic Products</span>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm14 10v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <span>Expert Farmer Support</span>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <span>Modern Farming Tech</span>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <span>Best Quality Guaranteed</span>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <span>Sustainable Agriculture</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <section class="section-padding reveal">
+    <div class="max-width-container" style="max-width: 1200px; margin: 0 auto;">
+      <div class="grid-2">
+        <div class="about-image-container" style="position: relative;">
+          <!-- Farmer with bulls matching Figma illustration -->
+          <img src="images/prod_fertilizers.webp" alt="Farmer with bulls in the field" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); width: 100%;">
+          
+          <div style="position: absolute; bottom: 20px; left: -20px; background-color: var(--primary); color: var(--bg-white); padding: 1rem 1.5rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-md);">
+            <h3 style="color: var(--bg-white); font-size: 1.5rem; font-weight: 800;" class="counter-val" data-target="10" data-suffix="+">0+</h3>
+            <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600;">Years Experience</span>
+          </div>
+
+          <div style="position: absolute; top: 20px; right: -20px; background-color: var(--accent); color: var(--bg-white); padding: 1rem 1.5rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-md);">
+            <h3 style="color: var(--bg-white); font-size: 1.5rem; font-weight: 800;" class="counter-val" data-target="25" data-suffix="K+">0K+</h3>
+            <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600;">Happy Farmers</span>
+          </div>
+        </div>
+        
+        <div class="about-text-container">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">We Help Farmers Feed<br>The World <span style="color: var(--accent);">Sustainably</span></h2>
+          <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.05rem;">Stackly Farms is committed to supporting farmers with the best resources, modern technology, and eco-friendly solutions to improve productivity and profitability.</p>
+          
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem;">
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+              <svg width="20" height="20" fill="var(--accent)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Quality seeds & inputs
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+              <svg width="20" height="20" fill="var(--accent)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Expert Agricultural Guidance
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+              <svg width="20" height="20" fill="var(--accent)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Sustainable & Eco-Friendly Practices
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+              <svg width="20" height="20" fill="var(--accent)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Market Access & Better Returns
+            </li>
+          </ul>
+
+          <a href="about.html" class="btn-primary">
+            Learn More About Us
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services -->
+  <section class="section-padding reveal" style="background-color: var(--light-sage-bg);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header">
+        <span class="section-tag">Our Services</span>
+        <h2 class="section-title">What we offer?</h2>
+        <p class="section-desc">Comprehensive agricultural solutions tailored to empower farmers and maximize productivity.</p>
+      </div>
+
+      <div class="grid-3" style="margin-bottom: 3.5rem;">
+        <!-- Card 1 -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Crop Solutions</h3>
+          <p>High-quality seeds, modern farming techniques, and expert guidance for better yields.</p>
+          <a href="services.html" class="service-card-link">
+            Read More
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg>
+          </div>
+          <h3>Soil Health</h3>
+          <p>Soil testing and nutrition management for optimal soil health and productivity.</p>
+          <a href="services.html" class="service-card-link">
+            Read More
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+          </div>
+          <h3>Irrigation Systems</h3>
+          <p>Smart irrigation solutions that conserve water and improve crop productivity.</p>
+          <a href="services.html" class="service-card-link">
+            Read More
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Farm Equipment</h3>
+          <p>Modern equipment for efficient farming, consultation, and supply support.</p>
+          <a href="services.html" class="service-card-link">
+            Read More
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+          </div>
+          <h3>Advisory Support</h3>
+          <p>Expert advice from agricultural consultants for crop management and disease protection.</p>
+          <a href="services.html" class="service-card-link">
+            Read More
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="services.html" class="btn-primary" style="background-color: var(--accent); border-color: var(--accent);">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section-padding reveal">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">Simple Steps to Better Farming</h2>
+      </div>
+
+      <div class="steps-container">
+        <div class="steps-line"></div>
+        
+        <div class="step-item">
+          <div class="step-badge">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+          </div>
+          <span class="step-num">1</span>
+          <h3>Consult</h3>
+          <p>Talk to our experts and understand your needs.</p>
+        </div>
+
+        <div class="step-item">
+          <div class="step-badge">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <span class="step-num">2</span>
+          <h3>Plan</h3>
+          <p>Get a customized plan for your farm.</p>
+        </div>
+
+        <div class="step-item">
+          <div class="step-badge">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0h2M5 21H3m4 0h10M9 7h1m-1 4h1m-1 4h1m5-8h1m-1 4h1m-1 4h1"/></svg>
+          </div>
+          <span class="step-num">3</span>
+          <h3>Implement</h3>
+          <p>Use quality inputs and follow best practices.</p>
+        </div>
+
+        <div class="step-item">
+          <div class="step-badge">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <span class="step-num">4</span>
+          <h3>Harvest</h3>
+          <p>Get higher yield and better profits.</p>
+        </div>
+
+        <div class="step-item">
+          <div class="step-badge">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.828 14.828a4 4 0 0 1-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <span class="step-num">5</span>
+          <h3>Grow</h3>
+          <p>We support you to grow sustainably every season.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Impact Section -->
+  <section class="section-padding reveal" style="background-color: #f7faf8;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header">
+        <span class="section-tag">Our Impact</span>
+        <h2 class="section-title">Growing Together, Achieving More</h2>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-item">
+          <div class="impact-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+          </div>
+          <h2 class="counter-val" data-target="25" data-suffix="K+">0K+</h2>
+          <p>Happy Farmers</p>
+        </div>
+
+        <div class="impact-item">
+          <div class="impact-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h18v18H3zM21 9H3m18 6H3m6-12v18m6-18v18"/></svg>
+          </div>
+          <h2 class="counter-val" data-target="15" data-suffix="K+">0K+</h2>
+          <p>Acres Covered</p>
+        </div>
+
+        <div class="impact-item">
+          <div class="impact-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+          </div>
+          <h2 class="counter-val" data-target="50" data-suffix="+">0+</h2>
+          <p>Expert Advisors</p>
+        </div>
+
+        <div class="impact-item">
+          <div class="impact-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-14v14m0-14L4 7m0 0v10l8 4"/></svg>
+          </div>
+          <h2 class="counter-val" data-target="100" data-suffix="+">0+</h2>
+          <p>Quality Products</p>
+        </div>
+
+        <div class="impact-item">
+          <div class="impact-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h2 class="counter-val" data-target="98" data-suffix="%">0%</h2>
+          <p>Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Products -->
+  <section class="section-padding reveal">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header">
+        <span class="section-tag">Our Products</span>
+        <h2 class="section-title">Quality Products for Every Farmer</h2>
+      </div>
+
+      <div class="grid-5" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.25rem; margin-bottom: 3.5rem;">
+        <!-- Card 1 -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="images/prod_seeds.webp" alt="Seeds">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title" style="font-size: 1.15rem; font-weight: 700;">Seeds</h3>
+            <p class="product-desc">High quality seeds for better germination.</p>
+            <a href="products.html" class="service-card-link" style="font-size: 0.85rem;">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="images/prod_fertilizers.webp" alt="Fertilizers">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title" style="font-size: 1.15rem; font-weight: 700;">Fertilizers</h3>
+            <p class="product-desc">Nutrient-rich fertilizers for healthy crops.</p>
+            <a href="products.html" class="service-card-link" style="font-size: 0.85rem;">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="images/pesticides.jpg" alt="Pesticides">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title" style="font-size: 1.15rem; font-weight: 700;">Pesticides</h3>
+            <p class="product-desc">Effective protection for every crop.</p>
+            <a href="products.html" class="service-card-link" style="font-size: 0.85rem;">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="images/prod_irrigation.webp" alt="Irrigation">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title" style="font-size: 1.15rem; font-weight: 700;">Irrigation</h3>
+            <p class="product-desc">Smart irrigation for water efficiency.</p>
+            <a href="products.html" class="service-card-link" style="font-size: 0.85rem;">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="images/prod_tools.webp" alt="Farm Tools">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title" style="font-size: 1.15rem; font-weight: 700;">Farm Tools</h3>
+            <p class="product-desc">Reliable tools for modern farmers.</p>
+            <a href="products.html" class="service-card-link" style="font-size: 0.85rem;">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="products.html" class="btn-primary" style="background-color: var(--accent); border-color: var(--accent);">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding reveal" style="background-color: var(--bg-soft); border-top: 1px solid var(--border-color);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our Farmers Say?</h2>
+      </div>
+
+      <div class="grid-3">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"Stackly Farms has helped me improve my crop yield and income. Their support and products are excellent!"</p>
+          <div class="testimonial-user">
+            <img src="images/user_ramesh.webp" alt="Ramesh Patel" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Ramesh Patel</h4>
+              <span>Farmer, Gujarat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"The soil testing and expert advice have made a huge difference in my farm productivity."</p>
+          <div class="testimonial-user">
+            <img src="images/user_savitri.webp" alt="Savitri Devi" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Savitri Devi</h4>
+              <span>Farmer, Maharastra</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"Best quality seeds and timely guidance. Stackly Farms is a true partner for farmers."</p>
+          <div class="testimonial-user">
+            <img src="images/user_arjun.webp" alt="Arjun Singh" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Arjun Singh</h4>
+              <span>Farmer, Punjab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Blog -->
+  <section class="section-padding reveal">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header">
+        <span class="section-tag">Latest From Our Blog</span>
+        <h2 class="section-title">Tips , News & Updates</h2>
+      </div>
+
+      <div class="grid-3" style="margin-bottom: 3.5rem;">
+        <!-- Blog 1 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="images/prod_fertilizers.webp" alt="Soil Health">
+            <span class="blog-tag">Farming Tips</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>May 10, 2026</span>
+              <span>• By Admin</span>
+            </div>
+            <h3>5 Proven Tips to Improve Soil Health Naturally</h3>
+            <a href="404.html" class="blog-link">
+              Read More
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="images/pesticides.jpg" alt="Pest Protection">
+            
+            <span class="blog-tag">Crop Care</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>May 12, 2026</span>
+              <span>• By Admin</span>
+            </div>
+            <h3>How to Protect Your Crops from Pests</h3>
+            <a href="404.html" class="blog-link">
+              Read More
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="images/prod_irrigation.webp" alt="Market Trends">
+            <span class="blog-tag">Market News</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>May 15, 2026</span>
+              <span>• By Admin</span>
+            </div>
+            <h3>Agriculture Market Trends in 2026</h3>
+            <a href="404.html" class="blog-link">
+              Read More
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="404.html" class="btn-primary" style="background-color: var(--accent); border-color: var(--accent);">View All Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Let's Grow CTA Banner -->
+  <div class="grow-banner reveal">
+    <div class="grow-content">
+      <h2>Let's Grow a Better Tomorrow Together</h2>
+      <p>Join thousands of farmers who trust Stackly Farms for a better and sustainable future.</p>
+    </div>
+    <a href="contact.html" class="grow-btn">
+      Get in Touch
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 5L15 25L50 45L85 25L50 5Z" fill="#0b6635" />
+            <path d="M15 40L50 60L85 40" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M15 55L50 75L85 55" stroke="#cbe3db" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M15 70L50 90L85 70" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          </svg>
+          <span>
+            Stackly
+            <small>FARMS</small>
+          </span>
+        </a>
+        <p>Empowering farmers with innovative solutions and quality products for sustainable agriculture.</p>
+        <div class="footer-socials">
+          <a href="404.html" class="footer-social-link fb" aria-label="Facebook">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H7v3h2v9h3v-9h3l.5-3H12V6c0-.88.39-1 1-1h2V2h-3c-2.42 0-3 1.35-3 3v3z"/></svg>
+          </a>
+          <a href="404.html" class="footer-social-link ln" aria-label="LinkedIn">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="404.html" class="footer-social-link tw" aria-label="Twitter">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+          <a href="404.html" class="footer-social-link ig" aria-label="Instagram">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="crops.html">Crops</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="404.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Our Services</h3>
+        <ul class="footer-links">
+          <li><a href="404.html">Crop Solutions</a></li>
+          <li><a href="404.html">Soil Health</a></li>
+          <li><a href="404.html">Irrigation Systems</a></li>
+          <li><a href="404.html">Farm Equipment</a></li>
+          <li><a href="404.html">Advisory Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Customer Support</h3>
+        <ul class="footer-links">
+          <li><a href="404.html">FAQs</a></li>
+          <li><a href="404.html">Shopping Policy</a></li>
+          <li><a href="404.html">Return Policy</a></li>
+          <li><a href="404.html">Terms & Conditions</a></li>
+          <li><a href="404.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <div class="footer-contact-info">
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Address :<br>Tamilnadu<br>Saleem - 636008</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Phone:<br>+91 7010792745</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <span>Email:<br>info@thestackly.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Stackly Farms. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
